@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <title>Meu Cine</title>
+</head>
+<body>
+    
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <img src="data:image/png;base64,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"/>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse menu" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#lancamentos">Lançamentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#destaques">Em destaque</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#avaliacoes">Avaliações</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#entrevista">Entrevistas e Making of</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./TMDB/index.html">Filmes</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Pesquisar filme" 
+                            aria-label="Search">
+                        <button class="btn btn-dark" type="submit">Pesquisar</button>
+                        
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class=" container lancam">
+            <h1>Lançamento</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div id="carouselExampleIndicators" class="carousel slide carrossel" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="col-xs-12 col-12 col-md-6 iframe">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/g6ng8iy-l0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="col-xs-12 col-12 col-md-6 tex1">
+                                <h2>
+                                    Vingadores: Ultimato
+                                </h2>
+                                <p>Após Thanos eliminar metade das criaturas vivas, os Vingadores têm de lidar com a perda de amigos e entes queridos. Com Tony Stark vagando perdido no espaço sem água e comida, Steve Rogers e Natasha Romanov lideram a resistência contra o titã louco.
+                                </p>
+                            </div>
+                            <div class="row text2">
+                                <div class="col-12">
+                                    Diretor:  Anthony Russo, Joe Russo.
+                                </div>
+
+                                <div class="col-12">
+                                    Roteiro: Stephen McFeely, Christopher Markus.
+                                </div>
+
+                                <div class="col-12">
+                                    Elenco: Chris Hemsworth, Chris Evans, Robert Downey Jr.
+                                </div>
+                                <div class="col-12 text2">
+                                    Estreia: 25 de abril de 2019
+                                </div>
+                                <div class="col-12 text2">
+                                    Avaliação: ★★★★☆
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-xs-12 col-12 col-md-6 iframe">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/t_ULBP6V9bg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="col-xs-12 col-12 col-md-6 tex1">
+                                <h2>
+                                    Vingadores: Guerra Infinita   
+                                </h2>
+                                <p>Homem de Ferro, Thor, Hulk e os Vingadores se unem para combater seu inimigo mais poderoso, o maligno Thanos. Em uma missão para coletar todas as seis pedras infinitas, Thanos planeja usá-las para infligir sua vontade maléfica sobre a realidade.
+                                </p>
+                            </div>
+                            <div class="row text2">
+                                <div class="col-12">
+                                    Diretor: Anthony Russo, Joe Russo
+                                </div>
+
+                                <div class="col-12">
+                                    Roteiro: Stephen McFeely, Christopher Markus.
+                                </div>
+
+                                <div class="col-12">
+                                    Elenco: Chris Hemsworth, Chris Evans, Robert Downey Jr.
+                                </div>
+                                <div class="col-12 text2">
+                                    Estreia: 26 de abril de 2018 
+                                </div>
+                                <div class="col-12 text2">
+                                    Avaliação: ★★★☆☆ 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-xs-12 col-12 col-md-6 iframe">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/-DTVuQTZr3E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="col-xs-12 col-12 col-md-6 tex1">
+                                <h2>
+                                    A Formula da Água   
+                                </h2>
+                                <p>Década de 60. Em meio aos grandes conflitos políticos e transformações sociais dos Estados Unidos da Guerra Fria, a muda Elisa, zeladora em um laboratório experimental secreto do governo, se encanta com uma criatura fantástica mantida presa e maltratada no local. Para executar um arriscado e apaixonado resgate, ela recorre ao melhor amigo Giles e à colega de turno Zelda, em uma aventura que pode custar muito mais do que o seu emprego.
+                                </p>
+                                </div>
+                                <div class="row text2">
+                                    <div class="col-12">
+                                        Diretor: Guillermo del Toro.
+                                    </div>
+
+                                    <div class="col-12">
+                                        Roteiro: Guillermo del Toro, Vanessa Taylor. 
+                                    </div>
+
+                                    <div class="col-12">
+                                        Elenco: Sally Hawkins, Doug Jones, Richard Jenkins. 
+                                    </div>
+                                    <div class="col-12 text2">
+                                        Estreia: 1 de fevereiro de 2018.
+                                    </div>
+                                    <div class="col-12 text2">
+                                        Avaliação: ★★★★☆
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </button>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h2 class="destaque" id="destaques">Em destaque</h2>
+                </div>
+                <div class="col-6">
+                    <div class="dropdown" style="text-align: right;">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categoria: Todos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">tema</a></li>
+                            <li><a class="dropdown-item" href="#">tema</a></li>
+                            <li><a class="dropdown-item" href="#">tema</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="row row-cols-1 row-cols-md-3">
+                    <div class="col mb-4">
+                        <div class="card">
+                            <img src="/img/the batman.png" class="img-fluid" alt="Imagem responsiva">
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card">
+                            <img src="/img/adão negro.png" class="img-fluid" alt="Imagem responsiva">
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card">
+                            <img src="/img/thor.png" class="img-fluid" alt="Imagem responsiva">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="avaliacoe" id="avaliacoes">Últimas avaliações</h2>
+        </div>
+        <div class="container ">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="card bg-light mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Vitor Souza</div>
+                        <div class="card-body">
+                            <p class="card-text">O site está no caminho certo, pois tem que melhorar algumas coisas, para ele fica excelente.
+                            </p>
+                            <h6>Avaliação:</h6>
+                            <p class="estrela">★★☆☆☆ </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="card bg-light mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Sabrina Piris</div>
+                        <div class="card-body">
+                            <p class="card-text"> Amei o site, tem todos os meus filmes preferidos. Estou ansiosa para os próximos filmes.</p>
+                            <h6>Avaliação:</h6>
+                            <p class="estrela">★★★★★ </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="card bg-light mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Fernando Silva</div>
+                        <div class="card-body">
+                            <p class="card-text">Nossa que site incrivel. Amei as escolha de cores e filmes, sem spoilers hein galera hahahaha
+                            </p>
+                            <h6>Avaliação:</h6>
+                            <p class="estrela">★★★★★ </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="card bg-light mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Ana Clara</div>
+                        <div class="card-body">
+                          <p class="card-text">O site é muito bom, só tive alguns problemas para entrar no celular. Espero que arrumem o mais rápido.</p>
+                              <h6>Avaliação:</h6>
+                              <p class="estrela">★★★★☆ </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="text-align: right; margin-top: 10px;">
+            <div class="row">
+                <div class="col-12">
+                    <button type="button" class="btn btn-secondary btn-sm">+ Carregar mais avaliações</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="entrevista" id="entrevista">Entrevistas & Making of</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <iframe  src="https://www.youtube.com/embed/mD8o_aRXZ08" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+                </div>
+                <div class="col-4">
+                    <iframe  src="https://www.youtube.com/embed/XKpnHmqJ6Lg" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="col-4">
+                    <iframe  src="https://www.youtube.com/embed/oGkxhYwV6Do" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                    gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <p><b>Filme:</b> Um Lugar Silencioso - Parte II.<br>
+                            <b>Diretor:</b> John Krasinski.<br>
+                            <b>Roteiro:</b> John Krasinski. <br>
+                            <b>Estreia:</b> 17 de junho de 2021
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <p><b>Filme:</b> Coringa.<br>
+                            <b>Diretor:</b> Todd Phillips.<br>
+                            <b>Roteiro:</b> Todd Phillip, Scott Silver. <br>
+                            <b>Estreia:</b> 3 de outubro de 2019 
+                        </p>
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <p><b>Filme:</b> Homem De Ferro.<br>
+                            <b>Diretor:</b> Jon Favreau.<br>
+                            <b>Roteiro:</b> Mark Fergus, Hawk Ostby, Art Marcum, Matt Holloway.<br><b>Estreia:</b> 30 de abril de 2008 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container novidSobre">
+            <div class="row">
+                <div class="col-8">
+                    <div class="container">
+                        <h2 class="novidade" id="novidade">Novidades e Curiosidades</h2>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-11 col-md-4">
+                                    <img src="/img/the batman.png" class="img-fluid" alt="Imagem responsiva">
+                                </div>
+                                <div class="col-xs-12 col-12 col-md-6">
+                                    <h5>The Batman</h5>
+                                    <p>Pensando neste caminho, e nos projetos que estão por vir, é possível então acreditarmos que Batman 2 vai acontecer em algum momento. Pouco provável que seja um lançamento para 2023, mas a partir de 2024 tudo é possível em relação ao segundo filme desta franquia comandada por Matt Reeves.</p>
+                                    <button type="button" class="btn btn-warning btn-sm">Hollowood</button>
+                                    <button type="button" class="btn btn-primary btn-sm">Oscar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container" style="margin-top: 10px;">
+                            <div class="row">
+                                <div class="ol-xs-12 col-11 col-md-4">
+                                    <img src="/img/adão negro.png" class="img-fluid" alt="Imagem responsiva">
+                                </div>
+                                <div class="col-xs-12 col-12 col-md-6">
+                                    <h5>Adão Negro</h5>
+                                    <p>Quando se transforma em Shazam, Billy Batson recebe uma série de dons: ele tem a sabedoria de Salomão, a força de Hércules, a resistência de Atlas, o poder de Zeus, a coragem de Aquiles e a velocidade de Mercúrio. E o mesmo acontece com o Adão Negro, só que no caso dele, as bençãos vem de deuses egípcios.</p>
+                                    <button type="button" class="btn btn-warning btn-sm">Hollowood</button>
+                                    <button type="button" class="btn btn-primary btn-sm">Oscar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container" style="margin-top: 10px;">
+                            <div class="row">
+                                <div class="ol-xs-12 col-11 col-md-4">
+                                    <img src="/img/thor.png" class="img-fluid" alt="Imagem responsiva">
+                                </div>
+                                <div class="col-xs-12 col-12 col-md-6 botao">
+                                    <h5>Thor: Amor e Trovão</h5>
+                                    <p>A transformação de Jane Foster em Poderosa Thor aconteceu, primeiramente, nas HQs de "The Mighty Thor". Basicamente, Thor se torna indigno e o Mjölnir chama por Jane — que, na época, estava passando por um tratamento contra o câncer.</p>
+                                    <button type="button" class="btn btn-warning btn-sm">Hollowood</button>
+                                    <button type="button" class="btn btn-primary btn-sm">Oscar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="col-4 sobre">
+                    <h2>Sobre</h2>
+                    <p>O Meu Cine é um site digital que lhe oferece sempre as melhores qualidades na hora de se escolher seu filme preferido. Sempre buscando atualizar com os novos filmes do momento.</p>
+                    <h2>Editoria</h2>
+                    <p>Redação: Vitor Fernando</p>
+                    <p>Pesquisa: Vitor Fernando</p>
+                    <p>Gerente Geral: Vitor Fernando</p>
+
+                    <h3>Redes Socias</h3>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class=" fa fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="col-12 footer_area">
+            © 2022 Copyright: Desenvolvimento de Interfaces Web -
+                <b>ICEI PUC MINAS</b>
+        </div>
+
+    </footer>
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/204212367c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+</body>
+</html>

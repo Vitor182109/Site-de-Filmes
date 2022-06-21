@@ -1,0 +1,131 @@
+
+.header{
+    padding: 20px;
+    background: rgb(60, 60, 82);
+    height: 90px;
+}
+
+.main {
+    background: rgb(81, 81, 100);
+}
+
+img.navbar-brand {
+    margin-top: -53px;
+    width: 150px;
+    height: 140px;
+    margin-right: 25px;
+
+}
+
+.nav-link{
+    color: rgb(0, 0, 0) !important;
+    margin-top: -53px;
+}
+
+.carrossel{
+    background: rgb(81, 81, 100);
+}
+
+form{
+    margin-top: -69px;
+    margin-left: 200px;
+}
+
+.lancam{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.iframe{
+    margin-top: 10px;
+    float: left;
+}
+
+.tex1{
+    float: right;
+    text-align: justify;
+
+}
+
+.text2{
+    text-align: left;
+
+}
+
+.destaque{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.avaliacoe{
+    margin: 20px;
+}
+
+.card-body{
+    text-align: justify;
+}
+
+.estrela{
+    color: rgb(255, 0, 0);
+}
+
+.entrevista{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.novidade{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.botao{
+    border-radius: 90px;
+}
+
+.sobre{
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer_area{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.footer{ 
+    padding: 20px;
+    background: rgb(60, 60, 82);
+}
+
+@media screen and (max-width: 660px) {
+
+  
+
+    .destaque{
+        margin-left: -190px;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;; 
+         margin-right: -15px; 
+        margin-left: -25px;
+        justify-content: center;
+        align-content: flex-end;
+        flex-direction: column;
+    }
+
+    img.navbar-brand{
+        margin-left: -50px;
+    }
+
+    .sobre{
+        display: none;
+    }
+    
+    .novidSobre{
+        display: none;
+    }
+}
